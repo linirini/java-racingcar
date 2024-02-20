@@ -76,7 +76,7 @@ public class CarRacingGame {
     }
 
     private void printWinners(Cars cars) {
-        Winners winners = Winners.createWinners(cars);
+        Winners winners = Winners.create(cars);
         outputView.printWinners(winners.getWinners());
     }
 

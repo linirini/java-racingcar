@@ -16,7 +16,7 @@ class WinnersTest {
     void findWinnerTest() {
         Cars cars = new Cars(List.of("가", "나", "다"));
         String expectedWinner = "나";
-        Winners winners = Winners.createWinners(cars);
+        Winners winners = Winners.create(cars);
 
         cars.getCars().get(0).move(MIN_POWER);
         cars.getCars().get(1).move(MIN_POWER);
@@ -31,7 +31,7 @@ class WinnersTest {
     void findWinnersTest() {
         Cars cars = new Cars(List.of("가", "나", "다"));
         List<String> expectedWinners = List.of("가", "다");
-        Winners winners = Winners.createWinners(cars);
+        Winners winners = Winners.create(cars);
 
         cars.getCars().get(0).move(MIN_POWER);
         cars.getCars().get(0).move(MIN_POWER);
@@ -47,7 +47,7 @@ class WinnersTest {
     void findWinnersAllTest() {
         Cars cars = new Cars(List.of("가", "나", "다"));
         List<String> expectedWinners = List.of("가", "나", "다");
-        Winners winners = Winners.createWinners(cars);
+        Winners winners = Winners.create(cars);
 
         cars.getCars().get(0).move(MIN_POWER);
         cars.getCars().get(0).move(MIN_POWER);
